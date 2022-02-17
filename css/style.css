@@ -2,7 +2,7 @@
 .common-input, #save-input{
     background-color: #DCDCDC;
 }
-#error{
+#error-div, #error-div2{
     display: none;
 }
 /* calculate section end */

@@ -24,50 +24,55 @@
     <!-- header end -->
 
     <main>
-        <section class="pb-5">
+        <section class="calculte-section pb-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
+                <div class="row gy-4 d-flex align-items-center">
+                    <div class="col-lg-7 col-md-6 col-12">
                         <div class="section-image">
                             <img class="img-fluid" src="images/money.jpg" alt="Money Calculate">
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-md-6 col-12">
                         <div class="calculation-part px-5 py-4 bg-light">
                             <div class="income mb-4">
                                 <h5 class="text-center fs-3 mb-4 mt-2">Income</h5>
-                                <div class="d-flex justify-content-end">
-                                    <label class="fs-5" for="">Income:</label>
-                                    <input class="border border-light px-3 py-2 ms-3" type="text">
+                                <div class="d-flex justify-content-center justify-content-lg-end">
+                                    <label class="input-heading fs-5" for="">Income:</label>
+                                    <input class="common-input border border-light px-3 py-2 ms-3" type="text">
                                 </div>
                             </div>
                             <div class="expense mb-4">
                                 <h5 class="text-center fs-3 mb-4">Expense</h5>
-                                <div class="mb-3 d-flex justify-content-end">
-                                    <label class="fs-5" for="">Food:</label>
-                                    <input class="border border-light px-3 py-2 ms-3" type="text">
+                                <div
+                                    class="mb-3 d-flex justify-content-center justify-content-lg-end align-items-center">
+                                    <label class="input-heading fs-5" for="">Food:</label>
+                                    <input class="common-input border border-light px-3 py-2 ms-3" type="text">
                                 </div>
-                                <div class="mb-3 d-flex justify-content-end">
-                                    <label class="fs-5" for="">Rent:</label>
-                                    <input class="border border-light px-3 py-2 ms-3" type="text">
+                                <div
+                                    class="mb-3 d-flex justify-content-center justify-content-lg-end align-items-center">
+                                    <label class="input-heading fs-5" for="">Rent:</label>
+                                    <input class="common-input border border-light px-3 py-2 ms-3" type="text">
                                 </div>
-                                <div class="d-flex justify-content-end">
-                                    <label class="fs-5" for="">Clothes:</label>
-                                    <input class="border border-light px-3 py-2 ms-3" type="text">
+                                <div class="d-flex justify-content-center justify-content-lg-end align-items-center">
+                                    <label class="input-heading fs-5" for="">Clothes:</label>
+                                    <input class="common-input border border-light px-3 py-2 ms-3" type="text">
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-primary px-5 py-2 fs-4 mb-4" type="button">Calculate</button>
-                                <h5 class="mb-4">Total Expenses: <span></span></h5>
-                                <h5 class="">Balance: <span></span></h5>
-                                <div class="d-flex justify-content-end align-items-center my-4">
-                                    <label class="fs-5" for="">Save:</label>
-                                    <input class="border border-light px-3 py-2 ms-3 w-25" type="text">
-                                    <p class="mx-3">%</p>
-                                    <button class="btn btn-primary px-5 py-1 fs-4" type="button">Save</button>
+                                <button id="calculate-button" class="btn btn-primary px-5 py-2 fs-4 mb-4"
+                                    type="button">Calculate</button>
+                                <h5 class="mb-3 fs-4">Total Expenses: <span></span></h5>
+                                <h5 class="fs-4">Balance: <span></span></h5>
+                                <div
+                                    class="d-flex justify-content-center justify-content-lg-end align-items-center my-4">
+                                    <label class="input-heading fs-5" for="">Save:</label>
+                                    <input id="save-input" class="border border-light px-3 py-2 ms-3 w-25" type="text">
+                                    <p class="mx-3 mb-0 fw-bolder">%</p>
+                                    <button id="save-button" class="btn btn-primary px-5 py-1 fs-4"
+                                        type="button">Save</button>
                                 </div>
-                                <h5 class="mb-4">Saving Amount: <span></span></h5>
-                                <h5>Remaining Balance: <span></span></h5>
+                                <h5 class="mb-3 fs-4">Saving Amount: <span></span></h5>
+                                <h5 class="fs-4">Remaining Balance: <span></span></h5>
                             </div>
                         </div>
                     </div>

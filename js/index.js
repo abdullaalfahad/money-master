@@ -21,6 +21,7 @@ function errorMessage(inputId, errorDiv, error) {
         document.getElementById('total-expenses').innerText = 0;
         document.getElementById('balance').innerText = 0;
         document.getElementById('saving-amount').innerText = 0;
+        document.getElementById('remaining-balance').innerText = 0;
     }
 }
 
@@ -78,6 +79,8 @@ document.getElementById('calculate-button').addEventListener('click', function (
         errorId.innerText = 'Provide amount lower than income';
         document.getElementById('total-expenses').innerText = 0;
         document.getElementById('balance').innerText = 0;
+        document.getElementById('saving-amount').innerText = 0;
+        document.getElementById('remaining-balance').innerText = 0;
     }
 })
 
@@ -97,7 +100,10 @@ document.getElementById('save-button').addEventListener('click', function () {
     else if (savingAmount > balance) {
         errorDivId.style.display = 'block';
         errorId.innerText = 'Provide amount lower than balance';
+        document.getElementById('total-expenses').innerText = 0;
+        document.getElementById('balance').innerText = 0;
         document.getElementById('saving-amount').innerText = 0;
+        document.getElementById('remaining-balance').innerText = 0;
     }
 
 })

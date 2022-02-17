@@ -37,32 +37,37 @@
                             <div class="income mb-4">
                                 <h5 class="text-center fs-3 mb-4 mt-2">Income</h5>
                                 <div class="d-flex justify-content-center justify-content-lg-end">
-                                    <label class="input-heading fs-5" for="">Income:</label>
-                                    <input class="common-input border border-light px-3 py-2 ms-3" type="text">
+                                    <label class="input-heading fs-5" for="income-balance">Income:</label>
+                                    <input id="income-balance" class="common-input border border-light px-3 py-2 ms-3"
+                                        type="text">
                                 </div>
                             </div>
                             <div class="expense mb-4">
                                 <h5 class="text-center fs-3 mb-4">Expense</h5>
                                 <div
                                     class="mb-3 d-flex justify-content-center justify-content-lg-end align-items-center">
-                                    <label class="input-heading fs-5" for="">Food:</label>
-                                    <input class="common-input border border-light px-3 py-2 ms-3" type="text">
+                                    <label class="input-heading fs-5" for="food-cost">Food:</label>
+                                    <input id="food-cost" class="common-input border border-light px-3 py-2 ms-3"
+                                        type="text">
                                 </div>
                                 <div
                                     class="mb-3 d-flex justify-content-center justify-content-lg-end align-items-center">
-                                    <label class="input-heading fs-5" for="">Rent:</label>
-                                    <input class="common-input border border-light px-3 py-2 ms-3" type="text">
+                                    <label class="input-heading fs-5" for="rent-cost">Rent:</label>
+                                    <input id="rent-cost" class="common-input border border-light px-3 py-2 ms-3"
+                                        type="text">
                                 </div>
                                 <div class="d-flex justify-content-center justify-content-lg-end align-items-center">
-                                    <label class="input-heading fs-5" for="">Clothes:</label>
-                                    <input class="common-input border border-light px-3 py-2 ms-3" type="text">
+                                    <label class="input-heading fs-5" for="clothes-cost">Clothes:</label>
+                                    <input id="clothes-cost" class="common-input border border-light px-3 py-2 ms-3"
+                                        type="text">
                                 </div>
                             </div>
                             <div class="text-center">
                                 <button id="calculate-button" class="btn btn-primary px-5 py-2 fs-4 mb-4"
                                     type="button">Calculate</button>
-                                <h5 class="mb-3 fs-4">Total Expenses: <span></span></h5>
-                                <h5 class="fs-4">Balance: <span></span></h5>
+                                <h5 id="error" class="mb-3 fs-4"></h5>
+                                <h5 class="mb-3 fs-4">Total Expenses: <span id="total-expenses"></span></h5>
+                                <h5 class="fs-4">Balance: <span id="balance"></span></h5>
                                 <div
                                     class="d-flex justify-content-center justify-content-lg-end align-items-center my-4">
                                     <label class="input-heading fs-5" for="">Save:</label>

@@ -1,0 +1,8 @@
+/* calculate section start */
+.common-input, #save-input{
+    background-color: #DCDCDC;
+}
+#error{
+    display: none;
+}
+/* calculate section end */
